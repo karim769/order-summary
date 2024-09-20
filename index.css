@@ -1,0 +1,155 @@
+:root{
+
+    --main-color:hsl(225, 100%, 98%);
+}
+
+   
+
+body{
+
+    margin: 0;
+    font-family: 'Red Hat Display',Arial, Helvetica, sans-serif;
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    background-size: 100%;
+    font-size: 1.4em;
+}
+
+
+main{
+
+    background-color: white;
+    max-width:95% ;
+    margin: auto;
+    margin-top: 3vh;
+    border-radius: 1.5em;
+    
+
+}
+
+@media (min-width:668px){
+
+    body{
+
+        background-image: url(./images/pattern-background-desktop.svg);
+    }
+
+    main{
+
+        margin-top: 10vh;
+        max-width: 25em;
+    }
+
+}
+
+
+.img-container img{
+
+    width: 100%;
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+
+}
+
+.info-container{
+
+    text-align: center;
+    max-width: 80%;
+    margin:  auto;
+    padding: 15px 0;
+
+}
+
+.info-container h1 + p{
+
+    line-height: 1.8em;
+}
+
+.music-container{
+
+background-color: hsl(225, 100%, 98%);
+display: flex;
+align-items: center;
+justify-content: space-around;
+border-radius: 1em;
+padding: 20px;
+margin: 8% 0;
+
+}
+
+.icon-container{
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.icon-container img{
+
+    margin-right: 25px;
+}
+
+
+.icon-container div strong{
+
+    font-weight: 800;
+}
+
+.icon-container div p{
+
+margin-bottom: 0;
+margin-top: 6px;
+
+}
+
+.music-container a{
+
+    color: hsl(245, 75%, 52%);
+}
+
+.music-container a:hover{
+
+    text-decoration: none;
+
+}
+
+.info-container button{
+
+    padding: 1.1em;
+    width: 100%;
+    margin: 5px 0;
+    border: none;
+    border-radius: 1.1em;
+    font-size: 1em;
+    cursor: pointer;
+
+}
+
+
+
+ button:nth-of-type(1){
+
+background-color:hsl(245, 75%, 52%);
+color: white;
+
+}
+
+button:nth-of-type(1):hover{
+
+    opacity: 0.5;
+
+}
+
+button:nth-of-type(2){
+
+    background-color:transparent;
+    color: black;
+}
+
+button:nth-of-type(2):hover{
+
+    font-weight: 700;
+
+}
